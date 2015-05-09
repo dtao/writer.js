@@ -1,0 +1,29 @@
+{
+  "name": "writer.js",
+  "version": "0.1.0",
+  "description": "Abstraction library for writing text",
+  "main": "writer.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dtao/writer.js.git"
+  },
+  "keywords": [
+    "text",
+    "strings",
+    "streams",
+    "io"
+  ],
+  "author": "Dan Tao <daniel.tao@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dtao/writer.js/issues"
+  },
+  "homepage": "https://github.com/dtao/writer.js",
+  "devDependencies": {
+    "expect": "^1.6.0",
+    "mocha": "^2.2.4"
+  }
+}
