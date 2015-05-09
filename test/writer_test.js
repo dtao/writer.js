@@ -1,6 +1,6 @@
 var expect = require('expect');
 
-writer = require('../writer.js')
+var writer = require('../writer.js');
 
 describe('writer.StringWriter', function() {
   var stringWriter;
@@ -20,5 +20,19 @@ describe('writer.StringWriter', function() {
     expect(stringWriter.toString()).toEqual('foo');
     stringWriter.write('bar');
     expect(stringWriter.toString()).toEqual('foobar');
+  });
+});
+
+describe('writer.ConsoleWriter', function() {
+  var consoleWriter;
+
+  beforeEach(function() {
+    consoleWriter = new writer.ConsoleWriter();
+  });
+
+  it('writes output to console', function() {
+    // TODO: actually test this properly
+    consoleWriter.write('foo');
+    consoleWriter.write('bar');
   });
 });

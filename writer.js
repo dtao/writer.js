@@ -18,6 +18,14 @@ StringWriter.prototype.toString = function toString() {
   return this.cache;
 };
 
+function ConsoleWriter() {
+}
+
+ConsoleWriter.prototype.write = function write(string) {
+  process.stdout.write(string);
+};
+
 module.exports = {
-  StringWriter: StringWriter
+  StringWriter: StringWriter,
+  ConsoleWriter: ConsoleWriter
 };
